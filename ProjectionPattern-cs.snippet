@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Projection</Title>
+      <Shortcut>projection</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="CSharp">
+        <![CDATA[$AccessModifier$ static Expression<Func<$SourceType$, $TargetType$>> Projection => $Parameter$ => new $TargetType$ {
+          
+        };]]>
+      </Code>
+      <Declarations>
+        <Literal>
+          <ID>AccessModifier</ID>
+          <ToolTip>public, private, internal</ToolTip>
+          <Default>public</Default>
+        </Literal>
+        <Literal>
+          <ID>SourceType</ID>
+          <ToolTip>The source type to be mapped from</ToolTip>
+          <Default>object</Default>
+        </Literal>
+        <Literal>
+          <ID>TargetType</ID>
+          <ToolTip>The target type to be mapped to</ToolTip>
+          <Default>object</Default>
+        </Literal>
+        <Literal>
+          <ID>Parameter</ID>
+          <ToolTip>The name of the parameter variable for the lambda</ToolTip>
+          <Default>x</Default>
+        </Literal>
+      </Declarations>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
